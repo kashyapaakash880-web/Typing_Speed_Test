@@ -186,34 +186,30 @@ def reset_everything():
 
 finished_btn = tk.Button(
     window,
-    text="Finish",
+    text="Finishing Test",
     command=finished_test,
     bg="black",
     fg="cyan",
-    justify="center",
 )
-finished_btn.pack(pady=(5, 12))
+finished_btn.pack(padx=1, pady=1)
 
 reset_btn = tk.Button(
     window,
-    text="Reset",
+    text="Reset Button",
     command=reset_everything,
     bg="black",
     fg="cyan",
-    justify="center",
 )
 
-reset_btn.pack(pady=(5, 12))
+reset_btn.pack(padx=1, pady=1)
 
 close_btn = tk.Button(
     window,
-    text="Close",
+    text="Close Button",
     command=window.destroy,
-    bg="cyan",
-    fg="black",
-    justify="center",
+    bg="black",
+    fg="cyan",
 )
-close_btn.pack(pady=(5, 12))
-
+close_btn.pack(padx=1, pady=1)
 
 window.mainloop()
